@@ -1,0 +1,15 @@
+i,j,imaks,temp : integer
+for i = n downto 2 do { pass sebanyak n-1 kali}
+    imaks = 1
+
+    for j = 2 to i do
+        if (A[j] > A[imaks]) then
+            imaks = j
+        endif
+    endfor
+
+    {pertukaran aimaks dengan ai}
+    temp = A[i]
+    A[i] = A[imaks]
+    A[imaks] = temp
+endfor
