@@ -277,7 +277,7 @@ int main(int argc, char** argv)
 	glutInitWindowPosition(100, 100);
 	
 	// judul jendela (isi dengan NAMA / NIM - JUDUL PRAKTIKUM)
-	glutCreateWindow("NAMA / NIM - PRAKTIKUM STRATEGI ALGORITMA BRANCH AND BOUND");
+	glutCreateWindow("Mohammad Farid Hendianto / 2200018401 - PRAKTIKUM STRATEGI ALGORITMA BRANCH AND BOUND");
 	
 	// panggil fungsi init untuk inisialisasi awal
 	initView();

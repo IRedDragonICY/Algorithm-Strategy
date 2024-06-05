@@ -242,22 +242,27 @@ int main(int argc, char** argv)
 {
 	// inisialisasi graf
 	graph.setIsDirected(false);
-	graph.setNumLevels(3);
-	graph.setNumNodes(4);
+	graph.setNumLevels(4);
+	graph.setNumNodes(6);
 	
 	// tambahkan node
 	graph.addNode(0, 0, 1.0f);
-	graph.addNode(3, 1, 1.0f);
 	graph.addNode(1, 2, 1.0f);
 	graph.addNode(2, 2, 1.0f);
+	graph.addNode(3, 1, 1.0f);
+	graph.addNode(4, 3, 1.0f);
+	graph.addNode(5, 3, 1.0f);
 	
 	// tambahkan edge dengan jarak
-	graph.addEdge(0, 1, 10.0f);
-	graph.addEdge(0, 3, 20.0f);
-	graph.addEdge(0, 2, 15.0f);
-	graph.addEdge(1, 3, 25.0f);
-	graph.addEdge(1, 2, 35.0f);
-	graph.addEdge(3, 2, 30.0f);
+	graph.addEdge(0, 1, 17.0f);
+	graph.addEdge(0, 2, 13.0f);
+	graph.addEdge(0, 3, 27.0f);
+	graph.addEdge(1, 2, 21.0f);
+	graph.addEdge(1, 3, 15.0f);
+	graph.addEdge(1, 4, 46.0f);
+	graph.addEdge(2, 3, 23.0f);
+	graph.addEdge(2, 5, 17.0f);
+	graph.addEdge(4, 5, 11.0f);
 	
 	// estimate node position
 	graph.setNodePosition();
@@ -277,7 +282,7 @@ int main(int argc, char** argv)
 	glutInitWindowPosition(100, 100);
 	
 	// judul jendela (isi dengan NAMA / NIM - JUDUL PRAKTIKUM)
-	glutCreateWindow("NAMA / NIM - PRAKTIKUM STRATEGI ALGORITMA BRANCH AND BOUND");
+	glutCreateWindow("Mohammad Farid Hendianto / 2200018401 - PRAKTIKUM STRATEGI ALGORITMA BRANCH AND BOUND");
 	
 	// panggil fungsi init untuk inisialisasi awal
 	initView();
